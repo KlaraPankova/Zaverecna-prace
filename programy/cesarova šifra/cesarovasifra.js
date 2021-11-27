@@ -1,6 +1,6 @@
 function cesarovas() {
     let textz =document.getElementById("textz").value;
-    let b =document.getElementById("druha").value;
+    let b =document.getElementById("posun").value;
     let delkatextu=textz.length;
     let textv="";
     let x, a,c;
@@ -34,5 +34,5 @@ function cesarovas() {
   c=String.fromCharCode(pismeno);
   textv=textv+c;
   }  
-   document.getElementById("demo").innerHTML = textv;
+   document.getElementById("vysledek").innerHTML = textv;
   }

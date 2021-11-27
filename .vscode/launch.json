@@ -7,8 +7,8 @@
         {
             "type": "pwa-chrome",
             "request": "launch",
-            "name": "Open Zaklad.html",
-            "file": "c:\\Users\\klara\\Documents\\Škola\\ZP\\programy\\Zaklad.html"
+            "name": "Open cesarova sifra.html",
+            "file": "c:\\Users\\klara\\Documents\\Škola\\ZP\\programy\\cesarova sifra\\cesarova sifra.html"
         }
     ]
 }
