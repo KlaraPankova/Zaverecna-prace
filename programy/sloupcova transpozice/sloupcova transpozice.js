@@ -1,6 +1,6 @@
 function stranspozice() {
     let textz =document.getElementById("textz").value;
-    let klicz =document.getElementById("druha").value;
+    let klicz =document.getElementById("klic").value;
     let delkatextu=textz.length;
     let delkaklice=klicz.length;
     let textv="";
@@ -21,5 +21,5 @@ function stranspozice() {
   /*c=String.fromCharCode(pismeno);
   textv=textv+c;*/
 
-   document.getElementById("demo").innerHTML =sloupec0;
+   document.getElementById("vysledek").innerHTML =sloupec0;
   }
