@@ -43,6 +43,6 @@ function vigenerovas() {
   c=String.fromCharCode(pismeno);
   textv=textv+c;
   }  
-  document.getElementById("demo").innerHTML =textv ;
+  document.getElementById("vysledek").innerHTML =textv ;
   }
   

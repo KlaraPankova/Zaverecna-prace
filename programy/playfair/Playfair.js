@@ -1,7 +1,7 @@
 
 function playfair() {
     let textz = document.getElementById("textz").value;
-    let klic = document.getElementById("druha").value;
+    let klic = document.getElementById("klic").value;
     textz = textz.replace(/\s+/g, '');
     klic = klic.replace(/\s+/g, '');
     let delkatextu = textz.length;
@@ -84,6 +84,5 @@ function playfair() {
         textv = textv + c + d;
         m++;
     }
-    document.getElementById("deme").innerHTML = textv;
-    console.log("Vysledek:" + textv);
+    document.getElementById("vysledek").innerHTML = textv;
 }

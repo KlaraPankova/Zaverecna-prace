@@ -1,7 +1,7 @@
 function afinnisifra() {
     let textz =document.getElementById("textz").value;
-    let b =document.getElementById("druha").value;
-    let d =document.getElementById("treti").value;
+    let b =document.getElementById("posun1").value;
+    let d =document.getElementById("posun2").value;
     let delkatextu=textz.length;
     let textv="";
     let abeceda = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q","r", "s", "t", "u", "v", "w", "x", "y", "z"];
@@ -19,5 +19,5 @@ function afinnisifra() {
        textv=textv+c;
         }
     }
-   document.getElementById("demo").innerHTML = textv;
+   document.getElementById("vysledek").innerHTML = textv;
   }
