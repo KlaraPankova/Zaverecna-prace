@@ -3,21 +3,33 @@ function stranspozice() {
     let klicz =document.getElementById("klic").value;
     let delkatextu=textz.length;
     let delkaklice=klicz.length;
-    let textv="";
+    let textv="", klicp;
     let klicv=[ ];
-    let sloupce=[ ];
-    let x, a,c,k;
+    let sloupce=[[ ],[ ]];
+    let x, a,c,k,index;
+    textz=textz.replace(/\s/g, "");
+    textz=textz.toLowerCase();
    for(let i=0; i<delkaklice; i++){
-        klicv[i]=klicz.charCodeAt(i)
-        sloupce[i]="";
+        x=klicz.charCodeAt(i);
+        sloupce[0][i]=x;
+        sloupce[1][i]="";
+        klicv[i]=x;
     }
     klicv.sort(function(a, b){return a - b});
     for (i=0;i<delkatextu; i++){
         k=i%delkaklice;
-        sloupce[k]=sloupce[k]+textz.charAt(i);
+        sloupce[1][k]=sloupce[1][k]+textz.charAt(i);
     }
-  /*c=String.fromCharCode(pismeno);
-  textv=textv+c;*/
+    for(i=0;i<delkaklice;i++){
+        a=klicv[i];
+        for(l=0;l<delkaklice; l++){
+            if(a==sloupce[0][l]){
+                index=l;
+                l=delkaklice;
+            }else{}
+        }
+        textv=textv+sloupce[1][index];
+    }
 
-   document.getElementById("vysledek").innerHTML =klicv;
+   document.getElementById("vysledek").innerHTML =textv;
   }
