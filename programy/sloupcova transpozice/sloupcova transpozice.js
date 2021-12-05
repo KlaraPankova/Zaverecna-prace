@@ -3,10 +3,10 @@ function stranspozice() {
     let klicz =document.getElementById("klic").value;
     let delkatextu=textz.length;
     let delkaklice=klicz.length;
-    let textv="", klicp;
+    let textv="";
     let klicv=[ ];
     let sloupce=[[ ],[ ]];
-    let x, a,c,k,index;
+    let x, a,k,index;
     textz=textz.replace(/\s/g, "");
     textz=textz.toLowerCase();
    for(let i=0; i<delkaklice; i++){
