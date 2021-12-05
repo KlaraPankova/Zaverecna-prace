@@ -8,6 +8,9 @@ function rfsifra() {
     let x;
     textz=textz.replace(/\s/g, "");
     textz=textz.toLowerCase();
+    for(i=0;i<radky;i++){
+        sloupce[i]="";
+    }
     while(index<delkatextu){
         for(i=0; i<radky;i++){
             if(index>delkatextu){
@@ -16,7 +19,7 @@ function rfsifra() {
             sloupce[i]=sloupce[i]+x;
             index++;
         }
-        for(i=radky;i>=0;i--){
+        for(i=radky-2;i>0;i--){
             if(index>delkatextu){
                 i=-1;}
             x=textz.charAt(index);
