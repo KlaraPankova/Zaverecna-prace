@@ -2,14 +2,14 @@
 function playfair() {
     let textz = document.getElementById("textz").value;
     let klic = document.getElementById("klic").value;
-    textz = textz.replace(/\s+/g, '');
-    klic = klic.replace(/\s+/g, '');
-    let delkatextu = textz.length;
-    let delkaklice = klic.length;
     let textv = "";
     let a = 0, b = 0, c, d, f, xradek, xIndex, yindex, yradek;
     let abeceda = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     let novabeceda = []; a1 = [], a2 = [], a3 = [], a4 = [], a0 = [];
+    textz = textz.replace(/\s+/g, '');
+    klic = klic.replace(/\s+/g, '');
+    let delkatextu = textz.length;
+    let delkaklice = klic.length;
     textz = textz.toLowerCase();
     klic = klic.toLowerCase();
     yindex = xIndex = yradek = xradek = 0;
@@ -30,7 +30,7 @@ function playfair() {
     for (l = 0; l < 5; l++) {
         for (k = 0; k < 5; k++) {
             this["a" + l] = this["a" + l] + novabeceda[b];
-            b++
+            b++;
         }
     }
     if (delkatextu / 2 == 0) {

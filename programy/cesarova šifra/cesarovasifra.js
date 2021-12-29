@@ -3,7 +3,7 @@ function cesarovas() {
     let b =document.getElementById("posun").value;
     let delkatextu=textz.length;
     let textv="";
-    let x, a,c;
+    let x,c;
     let posun= Number(b);
     while (posun>26){
       posun=posun-26;}
