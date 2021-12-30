@@ -4,15 +4,20 @@
   <title>Afinní šifra</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../stylsifry.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="afinní šifra.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-light">
-        <ul class="navbar-nav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Závěrečná práce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="../hlavní stránka/Zaklad.html">Hlavní stránka</a>
           </li>
@@ -29,7 +34,7 @@
             <a class="nav-link" href="../atbaš/atbaš.html">Atbaš</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="afinní šifra.html">Afinní šifra</a>
+            <a class="nav-link  active" href="afinní šifra.html">Afinní šifra</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../sloupcova transpozice/sloupcva transpozice.html">Sloupcova transpozice</a>
@@ -37,24 +42,29 @@
           <li class="nav-item">
             <a class="nav-link" href="../reil fence šifra/rf šifra.html">Reil fence šifra</a>
           </li>
-        </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
       
-      </nav>
-      
-<div class="jumbotron text-center">
-  <h1>Zaverecna prace</h1>
-  <p>Klara Pankova</p> 
-</div>
+  <div class="jumbotron text-center" id="uvodni">
+    <h1>Afinní šifra</h1>
+  </div>
 <div class="container">
-  <div class="conteiner">
-    <h2>Afinní šifra</h2>
+  <div class="container" id="sifra">
+    <h2>Šifrování</h2>
     <input type="text" placeholder="zapiste text" id="textz" />
     <input type="number" placeholder="zadejte klic" id="posun1" />
     <input type="number" placeholder="zadejte klic" id="posun2" />
     <button type="button" id="zmacknuteTlac" onclick="afinnisifra()">Zašifrovat</button>
-    <p id="vysledek"> </p>
+    <p id="vysledek">Výsledek </p>
+  </div>
+  <div class="container" id="popis">
+    <h2 >Princip</h2>
+    <p>Afinní šifra se mírně podobá Cesarově šifře. Abychom mohly šifrovat potřebujeme ale dva klíče(čísla) a ne jeden jako tomu bylo u Cesarovi šifry. Pak je dosadíme do vzorečku 
+      a*x+b mod(m) , kde a, b jsou čísla klíče, x je pořadí písmene v abecedě, když číslujeme od 0, a m je počet písmen abecedy. Číslo které nám vyjde je, kolikáté je zašifrované písmeno v abecedě. Například pokud budeme šifrovat s anglickou abecedou, která má 26 písmen, budeme mít jako klíč čísla 2, 4 a bude šifrovat písmeno V, které je v abecedě dvacáté první, tak po dosazení do vzorce 2*21+4 mod(26) nám vyjde číslo 20 takže písmeno O. 
+    </p>
   </div>
 </div>
-
 </body>
 </html>

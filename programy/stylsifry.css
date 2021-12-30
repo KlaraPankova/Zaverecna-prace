@@ -1,0 +1,37 @@
+body {
+    font-size: 1.1em;
+}
+h1 {
+    color: black;
+}
+h2{
+    color:black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+#uvodni{
+    padding: 25px 25px 25px 25px;
+    background-color: gray;
+}
+#popis{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#sifra{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+nav{
+    color: gray;
+}
+#vysledek{
+    border-style: groove;
+    border-color: black;
+    width: 35%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}

@@ -4,17 +4,22 @@
   <title>Playfair</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../stylsifry.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <script type="text/javascript" src="Playfair.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-light">
-        <ul class="navbar-nav">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Závěrečná práce</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="../hlavní stránka/Zaklad.html">Hlavní stránka</a>
+            <a class="nav-link " href="../hlavní stránka/Zaklad.html">Hlavní stránka</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../cesarova šifra/cesarova sifra.html">Cesarova šifra</a>
@@ -23,7 +28,7 @@
             <a class="nav-link" href="../vigenerova šifra/vigenerova sifra.html">Vigenerova šifra</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="playfair.html">Playfair</a>
+            <a class="nav-link active" href="playfair.html">Playfair</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../atbaš/atbaš.html">Atbaš</a>
@@ -37,21 +42,68 @@
           <li class="nav-item">
             <a class="nav-link" href="../reil fence šifra/rf šifra.html">Reil fence šifra</a>
           </li>
-        </ul>
+        </div>
+      </div>
+    </div>     
+  </nav>
       
-      </nav>
-      
-<div class="jumbotron text-center">
-  <h1>Zaverecna prace</h1>
-  <p>Klara Pankova</p> 
-</div>
+  <div class="jumbotron text-center" id="uvodni">
+        <h1>Playfair</h1>
+  </div>
+
 <div class="container">
-  <div class="conteiner">
+  <div class="conteiner" id="sifra">
     <h2>Playfair</h2>
     <input type="text" placeholder="zapiste text" id="textz" />
     <input type="text" placeholder="zadejte klic" id="klic" />
     <button type="button" id="zmacknuteTlac" onclick="playfair()">Zašifrovat</button>
-    <p id="vysledek"> </p>
+    <p id="vysledek">Výsledek </p>
+  </div>
+  <div class="container" id="popis">
+    <h2 >Princip</h2>
+    <p>K zašifrování textu je potřeba heslo, které je složené jen z písmen a má jich minimálně pět. S pomocí tohoto hesla si vytvoříme tabulku 5x5. Dosazujeme ze shora po řádcích a jako první dosadíme heslo, pokud se některé písmeno vyskytuje vícekrát, znovu ho nedosazujeme. Pak stejně pokračujeme s písmeny abecedy bez písmen z hesla a písmene Q, aby nám vycházela tabulka. Text, který chceme zašifrovat, zbavíme diakritiky, rozdělíme do dvojic a ty pak najdeme v tabulce. Pokud má text lichý počet písmen přidáme za něj X.Tady pak můžou nastat tři možnosti:
+      • Nachází se na stejném řádku. Pak je zašifrujeme jako písmeno, které se v tabulce nachází o jedno vpravo. Pokud je na řádku poslední tak ho zašifrujeme jako první na stejném řádku.
+      • Nachází se ve stejném sloupci. Pak je zašifrujeme jako písmeno, které se v tabulce nachází pod nimi. Pokud je ve sloupci poslední tak ho zašifrujeme jako první ve stejném sloupci.
+      • Nenachází se ani ve stejném řádku ani sloupci. Pak je zašifrujeme jako písmena, která leží na průsečíku původního řádku a sloupce druhého písmena.
+  Například naše heslo bude AUTOBUS a text Ahoj všichni. Tabulka bude vypadat takto</p>
+  <table> 
+    <tr>
+      <td>A</td>
+      <td>U</td>
+      <td>T</td>
+      <td>O</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>C</td>
+      <td>D</td>
+      <td>E</td>
+      <td>F</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>H</td>
+      <td>I</td>
+      <td>J</td>
+      <td>K</td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>M</td>
+      <td>N</td>
+      <td>P</td>
+      <td>R</td>
+    </tr>
+    <tr>
+      <td>V</td>
+      <td>W</td>
+      <td>X</td>
+      <td>Y</td>
+      <td>Z</td>
+    </tr>
+  </table>
+  <p>Text rozdělíme na AH OJ VS IC HN IX a zašifrujeme na UGEP AGHDIMNT</p>
   </div>
 </div>
 
