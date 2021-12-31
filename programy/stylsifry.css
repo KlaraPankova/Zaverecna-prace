@@ -9,7 +9,7 @@ h2{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-table, th, td {
+table td {
     border: 1px solid black;
   }
 #uvodni{

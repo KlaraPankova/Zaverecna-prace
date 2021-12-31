@@ -9,6 +9,20 @@ function stranspozice() {
     let x, a,k,index;
     textz=textz.replace(/\s/g, "");
     textz=textz.toLowerCase();
+    textz=textz.replace("á","a");
+    textz=textz.replace("č","c");
+    textz=textz.replace("ď","d");
+    textz=textz.replace("é"+"ě","e");
+    textz=textz.replace("í","i");
+    textz=textz.replace("ň","n");
+    textz=textz.replace("ó","o");
+    textz=textz.replace("ř","r");
+    textz=textz.replace("š","s");
+    textz=textz.replace("ť","t");
+    textz=textz.replace("ů"+"ú","u");
+    textz=textz.replace("ý","y");
+    textz=textz.replace("ž","z");
+
    for(let i=0; i<delkaklice; i++){
         x=klicz.charCodeAt(i);
         sloupce[0][i]=x;
