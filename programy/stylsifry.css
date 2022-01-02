@@ -12,6 +12,13 @@ h2{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+h3{
+    color:black;
+    font-family: Georgia, serif;
+    font-size: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
 p{
     color:hsl(0, 0%, 17%);
     font-family: Arial, sans-serif;
