@@ -52,20 +52,20 @@
   </div>
 
 <div class="container">
-  <div class="conteiner" id="sifra">
-    <h2>Playfair</h2>
-    <input type="text" placeholder="zapiste text" id="textz" />
-    <input type="text" placeholder="zadejte klic" id="klic" />
+  <div class="container" id="sifra">
+    <h2>Šifrování</h2>
+    <input type="text" placeholder="Zadejte text" id="textz" />
+    <input type="text" placeholder="Zadejte klíč" id="klic" />
     <button type="button" id="zmacknuteTlac" onclick="playfair()">Zašifrovat</button>
     <p id="vysledek">Výsledek </p>
   </div>
   <div class="container" id="popis">
     <h2 >Princip</h2>
     <p>K zašifrování textu je potřeba heslo, které je složené jen z písmen a má jich minimálně pět. S pomocí tohoto hesla si vytvoříme tabulku 5x5. Dosazujeme ze shora po řádcích a jako první dosadíme heslo, pokud se některé písmeno vyskytuje vícekrát, znovu ho nedosazujeme. Pak stejně pokračujeme s písmeny abecedy bez písmen z hesla a písmene Q, aby nám vycházela tabulka. Text, který chceme zašifrovat, zbavíme diakritiky, rozdělíme do dvojic a ty pak najdeme v tabulce. Pokud má text lichý počet písmen přidáme za něj X.Tady pak můžou nastat tři možnosti:
-      • Nachází se na stejném řádku. Pak je zašifrujeme jako písmeno, které se v tabulce nachází o jedno vpravo. Pokud je na řádku poslední tak ho zašifrujeme jako první na stejném řádku.
-      • Nachází se ve stejném sloupci. Pak je zašifrujeme jako písmeno, které se v tabulce nachází pod nimi. Pokud je ve sloupci poslední tak ho zašifrujeme jako první ve stejném sloupci.
-      • Nenachází se ani ve stejném řádku ani sloupci. Pak je zašifrujeme jako písmena, která leží na průsečíku původního řádku a sloupce druhého písmena.
-  Například naše heslo bude AUTOBUS a text Ahoj všichni. Tabulka bude vypadat takto</p>
+     <br> • Nachází se na stejném řádku. Pak je zašifrujeme jako písmeno, které se v tabulce nachází o jedno vpravo. Pokud je na řádku poslední tak ho zašifrujeme jako první na stejném řádku.
+      <br>• Nachází se ve stejném sloupci. Pak je zašifrujeme jako písmeno, které se v tabulce nachází pod nimi. Pokud je ve sloupci poslední tak ho zašifrujeme jako první ve stejném sloupci.
+      <br>• Nenachází se ani ve stejném řádku ani sloupci. Pak je zašifrujeme jako písmena, která leží na průsečíku původního řádku a sloupce druhého písmena.
+  <br>Například naše heslo bude AUTOBUS a text Ahoj všichni. Tabulka bude vypadat takto:</p>
   <table> 
     <tr>
       <td>A</td>
@@ -103,7 +103,7 @@
       <td>Z</td>
     </tr>
   </table>
-  <p>Text rozdělíme na AH OJ VS IC HN IX a zašifrujeme na UGEP AGHDIMNT</p>
+  <p>Text rozdělíme na AH OJ VS IC HN IX a zašifrujeme na UGEP AGHDIMNT.</p>
   </div>
 </div>
 

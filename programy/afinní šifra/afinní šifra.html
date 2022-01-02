@@ -53,16 +53,16 @@
 <div class="container">
   <div class="container" id="sifra">
     <h2>Šifrování</h2>
-    <input type="text" placeholder="zapiste text" id="textz" />
-    <input type="number" placeholder="zadejte klic" id="posun1" />
-    <input type="number" placeholder="zadejte klic" id="posun2" />
+    <input type="text" placeholder="Zapište text" id="textz" />
+    <input type="number" placeholder="Zadejte činitele" id="posun1" />
+    <input type="number" placeholder="Zadejte sčítance" id="posun2" />
     <button type="button" id="zmacknuteTlac" onclick="afinnisifra()">Zašifrovat</button>
     <p id="vysledek">Výsledek </p>
   </div>
   <div class="container" id="popis">
     <h2 >Princip</h2>
-    <p>Afinní šifra se mírně podobá Cesarově šifře. Abychom mohly šifrovat potřebujeme ale dva klíče(čísla) a ne jeden jako tomu bylo u Cesarovi šifry. Pak je dosadíme do vzorečku 
-      a*x+b mod(m) , kde a, b jsou čísla klíče, x je pořadí písmene v abecedě, když číslujeme od 0, a m je počet písmen abecedy. Číslo které nám vyjde je, kolikáté je zašifrované písmeno v abecedě. Například pokud budeme šifrovat s anglickou abecedou, která má 26 písmen, budeme mít jako klíč čísla 2, 4 a bude šifrovat písmeno V, které je v abecedě dvacáté první, tak po dosazení do vzorce 2*21+4 mod(26) nám vyjde číslo 20 takže písmeno O. 
+    <p>Afinní šifra se mírně podobá Cesarově šifře. Abychom mohly šifrovat potřebujeme ale dva klíče(čísla) a ne jeden jako tomu bylo u Cesarovi šifry. Pak je dosadíme do vzorečku <br>
+     <i> a*x+b mod(m)</i><br>kde a, b jsou čísla klíče, x je pořadí písmene v abecedě, když číslujeme od 0, a m je počet písmen abecedy. Číslo které nám vyjde je, kolikáté je zašifrované písmeno v abecedě. Například pokud budeme šifrovat s anglickou abecedou, která má 26 písmen, budeme mít jako klíč čísla 2, 4 a bude šifrovat písmeno V, které je v abecedě dvacáté první, tak po dosazení do vzorce 2*21+4 mod(26) nám vyjde číslo 20 takže písmeno O. 
     </p>
   </div>
 </div>

@@ -6,14 +6,16 @@ function atbas() {
     textz=textz.replace("á","a");
     textz=textz.replace("č","c");
     textz=textz.replace("ď","d");
-    textz=textz.replace("é"+"ě","e");
+    textz=textz.replace("é","e");
+    textz=textz.replace("ě","e");
     textz=textz.replace("í","i");
     textz=textz.replace("ň","n");
     textz=textz.replace("ó","o");
     textz=textz.replace("ř","r");
     textz=textz.replace("š","s");
     textz=textz.replace("ť","t");
-    textz=textz.replace("ů"+"ú","u");
+    textz=textz.replace("ů","u");
+    textz=textz.replace("ú","u");
     textz=textz.replace("ý","y");
     textz=textz.replace("ž","z");
 
@@ -27,7 +29,7 @@ function atbas() {
     textz=textz.replace("Ř","R");
     textz=textz.replace("Š","S");
     textz=textz.replace("Ť","T");
-    textz=textz.replace("Ů"+"Ú","U");
+    textz=textz.replace("Ú","U");
     textz=textz.replace("Ý","Y");
     textz=textz.replace("Ž","Z");
     for(let i=0; i<delkatextu; i++){
