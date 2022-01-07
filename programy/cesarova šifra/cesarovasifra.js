@@ -72,5 +72,4 @@ function cesarovas() {
 }
 }
    document.getElementById("vysledek").innerHTML = textv;
-
   }
