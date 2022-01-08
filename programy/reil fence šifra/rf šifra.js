@@ -1,7 +1,7 @@
 function rfsifra() {
     let textz =document.getElementById("textz").value;
     let radky =document.getElementById("cislo").value;
-    let delkatextu=textz.length;
+    let delkatextu;
     let textv="";
     let sloupce=[];
     let index=0;
@@ -12,6 +12,7 @@ function rfsifra() {
     }else{
         if(Number.isInteger(radky)){
     textz=textz.replace(/\s/g, "");
+    delkatextu=textz.length;
     textz=textz.toLowerCase();
     textz=textz.replace("á","a");
     textz=textz.replace("č","c");
