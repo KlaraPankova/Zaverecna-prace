@@ -58,9 +58,63 @@
     <button type="button" id="zmacknuteTlac" onclick="rfsifra()">Zašifrovat</button>
     <p id="vysledek">Výsledek </p>
   </div>
+  <div class="container" id="uvod">
+    <h2 >Úvod</h2>    
+  <p>Rail fence je jednoduchá transpoziční šifra. Svůj název získala díky šifrovací tabulce která připomíná železniční plot nebo koleje. Je vhodná pro delší texty a poměrně jednoduše dešifrovatelná hrubou silou, pokud víme, že se jedná o tento typ šifry. To není tak těžké zjistit, neboť se dá detekovat pomocí frekvenční analýzy. Byla vytvořena ve starověku Řeky, kteří se inspirovali šifrovací pomůckou Skytalé. Ta funguje na podobném principu, ale rail fence lze šifrovat  pouze s tužkou a papírem a může se drobně upravit změněním počtu řádků.</p>
+  <img src="skytalé.jpg">
+</div>
   <div class="container" id="popis">
     <h2 >Princip</h2>
-    <p></p>
+    <p>Abychom otevřený text mohli zašifrovat, potřebujeme počet řádků(klíč), do kterých budeme text rozdělovat. Připravíme si tabulku opočtu řádků a počet sloupců bude roven počtu písmen v otevřeném textu a začneme vepisovat text bez mezer z levého horního rohu a pokračujeme dolů do diagonály. Jakmile se octneme na posledním řádku, další písmena píšeme nahoru do diagonály. Takto pokračujeme dokud nezašifrujeme text. Poté postupně vypíšeme písmena z prvního řádku za něj text z druhého až k poslednímu řádku. Například pokud budeme mít text Ahoj jak se daří a počet řádků 3, tak tabulka bude vypadat takto:</p>
+    <table id="tabulka">
+      <tr>
+        <td>A</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>J</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>E</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>Í</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>H</td>
+        <td></td>
+        <td>J</td>
+        <td></td>
+        <td>A</td>
+        <td></td>
+        <td>S</td>
+        <td></td>
+        <td>D</td>
+        <td></td>
+        <td>Ř</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td>O</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>K</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>A<td>
+        <td> </td>
+        <td> <td>
+      </tr>
+    </table>
+
+    <p>Takže zašifrovaný text bude vypadat takto AJEÍHJASDŘOKA.</p>
   </div>
 </div>
 

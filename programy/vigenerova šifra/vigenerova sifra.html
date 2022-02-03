@@ -57,9 +57,44 @@
     <button type="button" id="zmacknuteTlac" onclick="vigenerovas()">Zašifrovat</button>
     <p id="vysledek">Výsledek </p>
   </div>
+  <div class="container" id="uvod">
+    <h2 >Úvod</h2>
+    <p>Jedná se o polyalfabetickou substituční šifru s 26 šifrovacími abecedami. Byla vytvořena francouzským diplomatem Blaisem de Vigenèrem v 16. století. Inspiroval se prací Leona Battistuta Albertiho, kde navrhl použití více šifrovacích abeced a vytvořil Albertiho šifru. Do 19. století byla považována za neprolomitelnou, dokud ji roku 1863 Friedrich Kasiski neprolomil pomocí Kasiského testu. Ačkoliv šifru skoro tři století nikdo neprolomil, v Evropě se neujala. Byla ale hojně používána v Americké občanské válce Konfederací a to mezi lety 1861-1865, tudíž i po jejím prolomení.</p>
+  </div>
   <div class="container" id="popis">
     <h2 >Princip</h2>
-    <p></p>
+    <p>Šifra funguje jako série Caesarových šifer o různém posunu. Nejlépe je zobrazena na Vigenérově čtverci, který má 27 řádků a sloupců, ale první se používá pouze na hledání písmen. V prvním sloupci i řádku je abeceda bez posunu v druhém s posunem o jedna atd. </p>
+    <img src="Vigenere_square.jpg">
+    <p>K zašifrování otevřeného textu potřebujeme slovní klíč neboli periodické heslo. K prvnímu písmenu z otevřeného textu přiřadíme první písmeno klíče, takto pokračujeme se všemi písmeny, pokud nám dojdou písmena klíče, tak opět použijeme první písmeno. Pak najdeme první písmeno textu v prvním sloupci a odpovídající písmeno klíče v prvním řádku. Na jejich průsečíku leží zašifrované písmeno. Například pokud budeme chtít zašifrovat text Ahoj všichni s klíčem Kočka, tak po přidělení písmen bude text vypadat takto</p>  
+    <table id="tabulka">
+      <tr>
+        <td>A</td>
+        <td>H</td>
+        <td>O</td>
+        <td>J</td>
+        <td>V</td>
+        <td>S</td>
+        <td>I</td>
+        <td>C</td>
+        <td>H</td>
+        <td>N</td>
+        <td>I</td>
+      </tr>
+      <tr>
+        <td>K</td>
+        <td>O</td>
+        <td>C</td>
+        <td>K</td>
+        <td>A</td>
+        <td>K</td>
+        <td>O</td>
+        <td>C</td>
+        <td>K</td>
+        <td>A</td>
+        <td>K</td>
+      </tr>
+    </table>
+    <p>A po nalezení všech dvojic písmen v tabulce konečný zašifrovaný text bude kvqtvcwerns. </p>  
   </div>
 </div>
 

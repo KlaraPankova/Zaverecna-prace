@@ -30,11 +30,12 @@ table td {
     text-align: center; 
     width: 30px;
     height: 30px;
-  
   }
   table{
     margin-top: 15px;
     margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
     border-left: 1px solid #000000; 
     border-top: 1px solid #000000; 
   }
@@ -47,6 +48,13 @@ table td {
     display: inline-block;
     font-family: Arial, sans-serif;
     font-size: 16px;
+  }
+  img{
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 #uvodni{
     padding: 25px 25px 25px 25px;

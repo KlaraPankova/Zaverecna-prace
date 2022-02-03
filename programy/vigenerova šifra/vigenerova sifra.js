@@ -53,8 +53,8 @@ function vigenerovas() {
     klic=klic.replace("ý","y");
     klic=klic.replace("ž","z");
     for(let i=0; i<delkaklice; i++){
-        let pismeno=klic.charCodeAt(i);
-      if (pismeno==32 || (pismeno>=65 && pismeno<=90) || (pismeno>=97 && pismeno<=122)){
+        let pismenko=klic.charCodeAt(i);
+      if (pismenko==32 || (pismenko>=65 && pismenko<=90) || (pismenko>=97 && pismenko<=122)){
     }else{
         textv="Zadejte klic pouze s písmeny";
         m=1;
@@ -67,10 +67,7 @@ if(m==0){
       }
       pismeno=textz.charCodeAt(i);
       pklic=klic.charCodeAt(iklic);
-      if (pklic>=97 && pklic<=122){
-          posun=pklic-97;}
-      if (pklic>=65 && pklic<=90){
-          posun=pklic-65;}
+      posun=pklic-97;
           
      if (pismeno==32 || (pismeno>=65 && pismeno<=90) || (pismeno>=97 && pismeno<=122)){
       if (pismeno==32){}
@@ -80,7 +77,7 @@ if(m==0){
               pismeno=96+x;
           }else{
           pismeno=pismeno+posun;
-      }
+          }
       iklic++;
       }
       if (pismeno>=65 && pismeno<=90){

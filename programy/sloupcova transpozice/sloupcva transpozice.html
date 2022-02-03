@@ -58,9 +58,46 @@
     <button type="button" id="zmacknuteTlac" onclick="stranspozice()">Zašifrovat</button>
     <p id="vysledek">Výsledek </p>
   </div>
+  <div class="container" id="uvod">
+    <h2 >Úvod</h2>
+    <p>Řadí se mezi transpoziční šifry a ačkoliv není složitá až do druhé poloviny 20. století byla jednou z nejvíce požívaných manuálních šifer a to převážně její zdvojená varianta. Byla používaná Německem za 1. světové války a Spojenci za 2. světové války diplomaty, vojáky i špiony. V padesátých letech začala být nahrazována komplexnější šifrou VIC. Sloupcová transpozice je vhodná pro delší texty a všeobecně platí, že čím je delší text a klíč, tím větší bezpečnost proti prolomení hrubou silou.</p>
+  </div>
   <div class="container" id="popis">
     <h2 >Princip</h2>
-    <p></p>
+    <p>Pro zašifrování je potřeba klíč a otevřený text. Text zapíšeme do tabulky o počtu sloupců rovným počtu písmen klíče. Ke každému sloupci přiřadíme písmeno klíče a písmena srovnáme podle abecedy. V tomto pořadí vypíšeme sloupce za sebou. Pokud náš text bude  Ahoj jak se daří a klíč pes. Tento příklad je znázorněn v Tabulce 6</p>
+    <table> 
+      <tr>
+        <td>P</td>
+        <td>E</td>
+        <td>S</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>H</td>
+        <td>O</td>
+      </tr>
+      <tr>
+        <td>J</td>
+        <td>J</td>
+        <td>A</td>
+      </tr>
+      <tr>
+        <td>K</td>
+        <td>S</td>
+        <td>E</td>
+      </tr>
+      <tr>
+        <td>D</td>
+        <td>A</td>
+        <td>R</td>
+      </tr>
+      <tr>
+        <td>I</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+    <p>Klíč pes seřadíme podle abecedy na eps, takže výsledný text bude hjsa ajkdi oaer.</p>  
   </div>
 </div>
 
