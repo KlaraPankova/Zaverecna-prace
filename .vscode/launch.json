@@ -9,7 +9,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open Zaklad.html",
-            "file": "C:\\Users\\klara\\Documents\\Škola\\závěrečná práce\\ZP\\programy\\hlavní stránka\\Zaklad.html"
+            "file": "C:\\Users\\klara\\Documents\\Škola\\závěrečná práce\\ZP\\index.html"
         }
     ]
 }
