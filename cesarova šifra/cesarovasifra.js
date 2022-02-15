@@ -38,8 +38,9 @@ function cesarovas() {
     textz=textz.replace("Ú","U");
     textz=textz.replace("Ý","Y");
     textz=textz.replace("Ž","Z");
-
-    posun=posun%26;
+    while (posun>26){
+    posun=posun/26;
+    }
     for(let i=0; i<delkatextu; i++){
       let pismeno=textz.charCodeAt(i);
     if (pismeno==32 || (pismeno>=65 && pismeno<=90) || (pismeno>=97 && pismeno<=122)){
