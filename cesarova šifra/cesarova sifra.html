@@ -59,12 +59,74 @@
     <button type="button" id="zmacknuteTlac" onclick="cesarovas()">Zašifrovat</button>
     <p id="vysledek">Výsledek</p>
   </div>
+  <div class="container" id="uvod">
+    <h2>Úvod</h2>
+  <p>Ceasarova šifra, neboli také posuvná šifra je jednoduchá monoalfabetická substituční šifra. Své jméno získala podle Juliuse Caesara, který ji popsal v díle „Zápisky o válce galské“ a využíval ji při několika různých vojenských operacích. To bylo možné díky vysoké negramotnosti obyvatelstva, neznalosti této metody a frekvenční analýzy. Jedná se o nejstarší potvrzené použití substituční šifry pro vojenské účely. Tímto byla významně ovlivněna nejen vojenská taktika, ale i pohled na šifry, což vedlo k rozvoji šifrovacích i dešifrovacích metod. Nejedná se ale o první dochované využití této šifry. To bylo nalezeno v Kámasútře pod názvem Tajné písmo .</p>
+  </div>
   <div class="container" id="popis">
     <h2 >Princip</h2>
     <p>
-      Princip Cesarovi šifry je založen na posunu písmen v abecedě o předem daný počet míst. Písmena, u kterých by posun přesahoval konec abecedy, šifrujeme na písmena na začátku abecedy. Takže za předpokladu, že posun bude 3 a budeme pracovat s anglickou abecedou, písmeno A zašifrujeme na D, písmeno B na E, Y na B atd. Posun může být maximálně tak velký jako je počet znaků v abecedě, ale když bude posun stejně velký jako množství písmen v abecedě, zašifrovaný text se bude rovnat nezašifrovanému.
-    </p>
-  </div>
+      Princip Caesarovy šifry je založen na posunu písmen v abecedě o předem daný počet míst, který je stejný pro celý text. Písmena, u kterých by posun přesahoval konec abecedy, šifrujeme na písmena na začátku abecedy. Takže za předpokladu, že posun (klíč) bude 3 a budeme pracovat s anglickou abecedou, písmeno A zašifrujeme na D, písmeno B na E, Y na B atd. </p>
+      <table id="tabulka">
+        <tr>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+          <td>M</td>
+          <td>N</td>
+          <td>O</td>
+          <td>P</td>
+          <td>Q</td>
+          <td>R</td>
+          <td>S</td>
+          <td>T</td>
+          <td>U</td>
+          <td>V</td>
+          <td>W</td>
+          <td>X</td>
+          <td>Y</td>
+          <td>Z</td>
+        </tr>
+        <tr>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+          <td>M</td>
+          <td>N</td>
+          <td>O</td>
+          <td>P</td>
+          <td>Q</td>
+          <td>R</td>
+          <td>S</td>
+          <td>T</td>
+          <td>U</td>
+          <td>V</td>
+          <td>W</td>
+          <td>X</td>
+          <td>Y</td>
+          <td>Z</td>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+        </tr>
+      </table>
+      <p>Posun může být maximálně tak velký, jako je počet znaků v abecedě, ale když bude posun stejně velký jako množství písmen v abecedě, zašifrovaný text se bude rovnat nezašifrovanému</p>
+    </div>
 </div>
 </body>
 </html>
